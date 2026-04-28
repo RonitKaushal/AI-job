@@ -63,7 +63,8 @@ export default function JobInput({ onAnalyze, analyzed }: JobInputProps) {
           </button>
         )}
         {analyzed && (
-          <button onClick={clear} className="btn-outline text-xs px-3 py-1.5 flex items-center gap-1.5"
+          <button
+            className="btn-outline text-xs px-3 py-1.5 flex items-center gap-1.5"
             style={{ fontSize: '0.75rem', padding: '6px 12px' }}
             onClick={() => { clear(); window.location.reload(); }}
           >
